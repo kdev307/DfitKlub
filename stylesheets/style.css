@@ -1,0 +1,46 @@
+/*************************************/
+/* HEADER*/
+/*************************************/
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: #fdf2e9; */
+
+  /* Because we want header to be sticky */
+  height: 9.6rem;
+  padding: 2.4rem 4.8rem;
+  position: relative;
+  gap: 10.8rem;
+}
+
+.logo {
+  height: 8.4rem;
+}
+
+/*************************************/
+/* NAVIGATION */
+/*************************************/
+
+.main-nav {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  font-size: 2.4rem;
+  gap: 10.8rem;
+}
+
+.main-nav-list,
+.main-nav-log-list {
+  list-style: none;
+  display: flex;
+  gap: 3.6rem;
+  padding: 0 1.2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-nav a {
+  text-decoration: none;
+}
