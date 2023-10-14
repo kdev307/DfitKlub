@@ -1,6 +1,6 @@
 * {
   /* background-color: #000; */
-  color: #dddddd;
+  /* color: #dddddd; */
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -13,4 +13,14 @@ html {
 
   /* Does NOT work on Safari */
   /* scroll-behavior: smooth; */
+}
+
+.sub-heading {
+  font-size: 2.4rem;
+  padding-left: 100rem;
+  padding-bottom: 10rem;
+  font-family: "Rubik", sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #787878;
 }

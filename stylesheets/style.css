@@ -93,7 +93,7 @@
 }
 
 .msg3 {
-  color: #000;
+  color: #cfcaca;
 }
 
 .hero-button:link,
@@ -143,3 +143,99 @@
 .btn3:active {
   background-color: #098bae;
 }
+
+/*************************************/
+/* ABOUT US SECTION */
+/*************************************/
+
+.section-about {
+  background-color: #141313;
+  padding-top: 1.6rem;
+}
+
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 
+.about-img-box {
+} */
+
+.about-img {
+  width: 100%;
+}
+
+.passes {
+  margin-top: 2.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  /* border: 2px solid #fff; */
+}
+
+.pass {
+  font-family: "Edu NSW ACT Foundation", sans-serif;
+  text-align: center;
+  padding: 2.4rem;
+  /* font-weight: 700; */
+  font-size: 3rem;
+  border: 0.6rem double #787878;
+  border-radius: 0.75rem;
+  width: 24rem;
+  height: 20rem;
+}
+
+.pelite {
+  font-weight: 900;
+  background: linear-gradient(to right, #daa520, #ffd700, #daa520);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.ppro {
+  font-weight: 900;
+  background: linear-gradient(to right, #888888, #c0c0c0, #888888);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.phome {
+  font-weight: 900;
+  background: linear-gradient(to right, #8a2be2, #ff00ff, #8a2be2);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.pass-message {
+  font-size: 1.6rem;
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  padding-top: 1rem;
+  color: #aeacac;
+}
+
+.about-text {
+  font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
+  text-align: justify;
+  color: #d1cbcb;
+  /* border: 2px solid red; */
+  /* width: auto; */
+  height: 50rem;
+  padding: 4rem;
+}
+
+/* .about-explore {
+  margin-top: 2.8rem;
+  padding: 1.6rem;
+  text-align: center;
+  border: 0.2rem solid transparent;
+  font-weight: 900;
+  text-decoration: none;
+  background: #fff;
+  background: linear-gradient(to right, #ff0000, #ff4400, #ff0000);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+} */
