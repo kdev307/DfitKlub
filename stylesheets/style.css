@@ -33,13 +33,13 @@
 .main-nav-link:visited {
   font-size: 2.8rem;
   gap: 10.8rem;
-  color: #fff;
+  color: #d1cbcb;
   text-decoration: none;
 }
 
 .main-nav-link:hover,
 .main-nav-link:active {
-  color: #d1cbcb;
+  color: #fff;
 }
 
 .main-nav-list,
@@ -85,7 +85,7 @@
   font-weight: 700;
   font-size: 3.6rem;
   color: #d3d1d1;
-  background-color: #c20707;
+  background-color: #c30000;
   padding: 1rem 2rem;
   border-radius: 1.5rem;
   top: 30rem;
@@ -100,7 +100,8 @@
 
 .hero-button:hover,
 .hero-button:active {
-  background-color: #fa2e2e;
+  background-color: #ff0000;
+  color: #fff;
 }
 
 .btn2:link,
@@ -108,23 +109,23 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: #aba21b;
+  background-color: #bfb200;
   color: #000;
 }
 
 .btn2:hover,
 .btn2:active {
-  background-color: #f4e625;
+  background-color: #ffee00;
 }
 
 .btn3:link,
 .btn3:visited {
-  background-color: #098bae;
+  background-color: #009fcb;
 }
 
 .btn3:hover,
 .btn3:active {
-  background-color: #00c8ff;
+  background-color: #00c3ff;
 }
 
 /*************************************/
@@ -292,7 +293,7 @@
 
 .program {
   /* background-color: #ff0000; */
-  background: linear-gradient(30deg, #ff0000, #ff4400, #ff0000);
+  background: linear-gradient(45deg, #ff0000, #ff4400, #ff0000);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   border: 0.2rem solid #ffffff;
@@ -303,6 +304,17 @@
   padding: 1.6rem;
   margin-right: 1.6rem;
   column-gap: 32 rem;
+}
+
+.program:hover {
+  background: linear-gradient(45deg, #00ff00, #02af05, #00ff00);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  transition: 1s;
+  transform: rotate3d(-1, -2, -1, 45deg) scale(2, 1.5);
+  border: none;
+  padding: 0;
+  /* color: #00ff00; */
 }
 
 /*************************************/
@@ -410,6 +422,11 @@
   display: grid;
   grid-template-columns: 0.75fr;
   justify-content: space-between;
+  /* column-gap: 9.6rem; */
+}
+
+address {
+  margin-bottom: 0rem;
 }
 
 .footer-logo {
@@ -429,16 +446,19 @@
 
 .contacts {
   align-items: center;
-  justify-content: center;
+  /* justify-content: center; */
   text-align: center;
+  justify-self: center;
   column-gap: 2.4rem;
 }
 
 .follow {
+  align-items: center;
   grid-column-start: 2;
   grid-column-end: -1;
-  align-items: center;
-  justify-content: center;
+  /* justify-content: center; */
+  column-gap: 4rem;
+  justify-self: center;
 }
 
 .credit {
