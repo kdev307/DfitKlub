@@ -310,12 +310,150 @@
   background: linear-gradient(45deg, #00ff00, #02af05, #00ff00);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
-  transition: 1s;
+  transition: 0.6s;
   transform: rotate3d(-1, -2, -1, 45deg) scale(2, 1.5);
   border: none;
   padding: 0;
   /* color: #00ff00; */
 }
+
+/*************************************/
+/* PRICING SECTION */
+/*************************************/
+
+.section-facilities {
+  background-color: #141313;
+  color: #cbcbcb;
+  padding: 3.2rem 2.4rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.pricing {
+  align-items: center;
+  justify-content: space-around;
+  column-gap: 2.4rem;
+  row-gap: 1.6rem;
+  padding-top: 3.2rem;
+  /* width: 75%; */
+}
+
+.pricing-plan--elite {
+  /* justify-self: end; */
+  border: 2px solid #fdf2e9;
+  padding: 4.6rem;
+}
+
+.pricing-plan--pro {
+  /* background-color: #fdf2e9; */
+  padding: 4.6rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.pricing-plan--home {
+  /* justify-self: end; */
+  border: 2px solid #fdf2e9;
+  padding: 4.6rem;
+}
+
+.plan {
+  border: 0.3rem solid #787878;
+  border-radius: 11px;
+  box-shadow: 0 2.4rem 4.8rem rgba(255, 255, 255, 0.108);
+  align-items: center;
+  padding-left: 3.2rem;
+}
+
+.plan-header,
+.fp {
+  text-align: center;
+  justify-self: center;
+  margin-bottom: 4.8rem;
+}
+
+.plan-name {
+  text-transform: uppercase;
+  margin-bottom: -2rem;
+  background-color: #141313;
+  text-align: center;
+  font-family: "Edu NSW ACT Foundation", sans-serif;
+  text-align: center;
+  font-size: 7rem;
+  border: none;
+  margin-left: 20%;
+  margin-top: -10%;
+}
+
+.plan-price,
+.fp {
+  font-family: "Edu NSW ACT Foundation", sans-serif;
+  border-top: 0.6rem solid #787878;
+  font-size: 6.2rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 1.6rem;
+}
+
+.fp {
+  border: none;
+  font-size: 3.2rem;
+  margin-bottom: 0;
+  font-family: "Dancing SCript", sans-serif;
+  text-align: center;
+}
+
+.plan-price span {
+  font-size: 3rem;
+  font-weight: 500;
+  margin-right: 0.8rem;
+}
+
+.plan-text {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  color: #6f6f6f;
+}
+
+.plan-sign-up {
+  text-align: center;
+  margin-top: 4.8rem;
+}
+
+.plan-details {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  text-align: center;
+  padding: 2.4rem;
+}
+
+.feature-icon {
+  font-family: "Poppins", sans-serif;
+  color: #000;
+  height: 3.2rem;
+  width: 3.2rem;
+  background-color: #9a9999;
+  border: 0.2rem solid #000;
+  padding: 1rem;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.feature-title {
+  font-family: "Rubik", sans-serif;
+  font-size: 2.4rem;
+  color: #666;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.feature-text {
+  font-size: 1.6rem;
+  line-height: 1.8;
+}
+
+/*************************************/
+/* TESTIMONIALS SECTION */
+/*************************************/
 
 /*************************************/
 /* CALL to ACTION SECTION */
@@ -326,14 +464,14 @@
   /* padding: 9.6rem 0 12.8rem 0; */
   /* top / horizontal / left */
   padding: 4.8rem 10.8rem;
-  background: linear-gradient(180deg, #000, #201f1f);
+  background: linear-gradient(45deg, #060025, #030014);
   color: #fdf2e9;
 }
 
 .cta {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+  box-shadow: 0 2.4rem 4.8rem rgba(255, 255, 255, 0.15);
   border-radius: 1rem;
   background-image: linear-gradient(to right bottom, #13131365, #161616);
   overflow: hidden;
@@ -359,8 +497,8 @@
 .cta-img-box {
   background-image: linear-gradient(
       to right bottom,
-      rgba(43, 8, 8, 0.35),
-      rgba(37, 6, 6, 0.35)
+      rgba(27, 27, 28, 0.35),
+      rgba(0, 2, 56, 0.35)
     ),
     url("../images/home/cta.jpg");
   background-size: cover;
@@ -429,6 +567,17 @@ address {
   margin-bottom: 0rem;
 }
 
+.footer-link:link,
+.footer-link:visited {
+  text-decoration: none;
+  color: #bbbaba;
+}
+
+.footer-link:hover,
+.footer-link:active {
+  text-decoration: none;
+  color: #fff;
+}
 .footer-logo {
   height: 14.4rem;
   padding-left: 1.6rem;
