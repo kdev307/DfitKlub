@@ -59,20 +59,20 @@
           <li>
             <a href="#testimonials" class="main-nav-link">Testimonials</a>
           </li>
-          <li>
+          <!-- <li>
             <a href="#trainers" class="main-nav-link">Trainers</a>
-          </li>
+          </li> -->
         </ul>
       </nav>
       <nav class="profile-nav">
         <ul class="main-nav-log-list">
           <li>
-            <a href="#cta" class="main-nav-link"
+            <a href="login.html" class="main-nav-link"
               ><ion-icon name="person-outline"></ion-icon
             ></a>
           </li>
           <li>
-            <a href="store.html" class="main-nav-link"
+            <a href="store.html" class="main-nav-link" target="_blank"
               ><ion-icon name="cart-outline"></ion-icon
             ></a>
           </li>
@@ -95,7 +95,7 @@
               <p class="carousel-caption hero-message msg1">
                 Join Us for promoting Healthy LifeStyle.
               </p>
-              <a class="carousel-caption hero-button btn1" href="#cta"
+              <a class="carousel-caption hero-button btn1" href="signUp.html"
                 >Join Now</a
               >
               <img src="images/home/hero.jpg" alt="hero1" />
@@ -113,7 +113,10 @@
               <p class="carousel-caption hero-message msg3">
                 Get the exclusive athlesuire and equipments at best price.
               </p>
-              <a class="carousel-caption hero-button btn3" href="store.html"
+              <a
+                class="carousel-caption hero-button btn3"
+                href="store.html"
+                target="_blank"
                 >Shop Now</a
               >
               <img src="images/home/athl - Copy.jpg" alt="Shop Now" />
@@ -172,9 +175,9 @@
                 </p>
               </div>
             </div>
-            <!-- <span class="about-explore">
-              <a href="#facilities">EXPLORE FITPASSES</a>
-            </span> -->
+            <span class="about-explore">
+              <a href="#facilities">◀ EXPLORE FITPASSES ▶</a>
+            </span>
           </div>
         </div>
       </section>
@@ -182,74 +185,27 @@
         <span class="sub-heading"> Programs </span>
 
         <div class="programs">
-          <div class="program-img-box" id="prgms">
-            <div id="demo1" class="carousel slide" data-ride="carousel">
-              <!-- Indicators -->
-              <!-- <ul class="carousel-indicators">
-                <li data-target="#demo1" data-slide-to="0" class="active"></li>
-                <li data-target="#demo1" data-slide-to="1"></li>
-                <li data-target="#demo1" data-slide-to="2"></li>
-                <li data-target="#demo1" data-slide-to="3"></li>
-                <li data-target="#demo1" data-slide-to="4"></li>
-                <li data-target="#demo1" data-slide-to="5"></li>
-                <li data-target="#demo1" data-slide-to="6"></li>
-                <li data-target="#demo1" data-slide-to="7"></li>
-                <li data-target="#demo1" data-slide-to="8"></li>
-              </ul> -->
-
-              <!-- The slideshow -->
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img src="images/home/P-gym.jpg" alt="P-gym" />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    src="images/home/P-home-workout.jpg"
-                    alt="P-home-workout"
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img src="images/home/P-meditation.jpg" alt="P-meditation" />
-                </div>
-                <div class="carousel-item">
-                  <img src="images/home/P-spa-masssage.jpg" alt="P-spa" />
-                </div>
-                <div class="carousel-item">
-                  <img src="images/home/P-sports.jpg" alt="P-sports" />
-                </div>
-                <div class="carousel-item">
-                  <img src="images/home/P-therapy.jpg" alt="P-therapy" />
-                </div>
-                <div class="carousel-item">
-                  <img src="images/home/P-yoga.jpg" alt="P-yoga" />
-                </div>
-                <div class="carousel-item">
-                  <img src="images/home/P-zumba.jpg" alt="P-zumba" />
-                </div>
-              </div>
-              <!-- Left and right controls -->
-              <a class="carousel-control-prev" href="#demo1" data-slide="prev">
-                <span class="carousel-control-prev-icon"></span>
-              </a>
-              <a class="carousel-control-next" href="#demo1" data-slide="next">
-                <span class="carousel-control-next-icon"></span>
-              </a>
-            </div>
+          <div class="program-img-box">
+            <img
+              class="program-img"
+              src="images/home/P-meditation.jpg"
+              alt="Meditation"
+            />
           </div>
           <div class="program-names grid">
             <div class="row1 grid--3--cols">
               <div class="program">Gym</div>
-              <div class="program">Meditation</div>
-              <div class="program">Yoga</div>
+              <div class="program">Zumba</div>
+              <div class="program">Sports</div>
             </div>
             <div class="row2 grid--2--cols">
               <div class="program">Home Workout</div>
               <div class="program">Spa & Massage</div>
             </div>
             <div class="row3 grid--3--cols">
-              <div class="program">Zumba</div>
               <div class="program">Therapy</div>
-              <div class="program">Sports</div>
+              <div class="program">Yoga</div>
+              <div class="program">Meditation</div>
             </div>
           </div>
         </div>
@@ -391,22 +347,178 @@
             <ion-icon class="feature-icon" name="shirt-outline"></ion-icon>
             <p class="feature-title">Athlesuire Discount</p>
             <p class="feature-text">
-              Get discount on purchase of athlesuire from website.
+              Get discount on purchase of athlesuire from our website.
             </p>
           </div>
         </div>
       </section>
-      <section class="section-testimonials" id="testimonials"></section>
-      <section class="section-trainers" id="trainers"></section>
+      <section class="section-testimonials" id="testimonials">
+        <span class="sub-heading"> Testimonials </span>
+        <h2 class="sub-heading">They changed their Lifestyle, You can too !</h2>
+        <div class="testimonial-sect grid--2--cols">
+          <div class="gallery-container">
+            <div class="gallery">
+              <figure class="gallery-item gallery-img-1">
+                <img
+                  src="images/home/gallery-1.jpg"
+                  alt="Gallery"
+                  class="gallery-img"
+                />
+              </figure>
+              <figure class="gallery-item gallery-img-2">
+                <img
+                  src="images/home/gallery-2.jpg"
+                  alt="Gallery"
+                  class="gallery-img"
+                />
+              </figure>
+              <figure class="gallery-item gallery-img-3">
+                <img
+                  src="images/home/gallery-3.jpg"
+                  alt="Gallery"
+                  class="gallery-img"
+                />
+              </figure>
+              <figure class="gallery-item gallery-img-4">
+                <img
+                  src="images/home/gallery-4.jpg"
+                  alt="Gallery"
+                  class="gallery-img"
+                />
+              </figure>
+              <figure class="gallery-item gallery-img-5">
+                <img
+                  src="images/home/gallery-5.jpg"
+                  alt="Gallery"
+                  class="gallery-img"
+                />
+              </figure>
+              <figure class="gallery-item gallery-img-6">
+                <img
+                  src="images/home/gallery-6.jpg"
+                  alt="Gallery"
+                  class="gallery-img"
+                />
+              </figure>
+              <figure class="gallery-item gallery-img-7">
+                <img
+                  src="images/home/gallery-7.jpg"
+                  alt="Gallery"
+                  class="gallery-img"
+                />
+              </figure>
+              <figure class="gallery-item gallery-img-8">
+                <img
+                  src="images/home/gallery-8.jpg"
+                  alt="Gallery"
+                  class="gallery-img"
+                />
+              </figure>
+              <figure class="gallery-item gallery-img-9">
+                <img
+                  src="images/home/gallery-9.jpg"
+                  alt="Gallery"
+                  class="gallery-img"
+                />
+              </figure>
+              <figure class="gallery-item gallery-img-10">
+                <img
+                  src="images/home/gallery-10.jpg"
+                  alt="Gallery"
+                  class="gallery-img"
+                />
+              </figure>
+            </div>
+          </div>
+          <div class="testimonial-container">
+            <div class="testimonials">
+              <figure class="testimonial">
+                <img
+                  src="images/customers/customer-2.jpg"
+                  alt="customer"
+                  class="testimonial-img"
+                />
+                <blockquote class="testimonials-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Culpa, recusandae!
+                </blockquote>
+                <p class="testimonial-name">&mdash; Dave Bryson</p>
+              </figure>
+              <figure class="testimonial">
+                <img
+                  src="images/customers/customer-3.jpg"
+                  alt="customer"
+                  class="testimonial-img"
+                />
+                <blockquote class="testimonials-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Voluptatum, veritatis.
+                </blockquote>
+                <p class="testimonial-name">&mdash; Sophie Watson</p>
+              </figure>
+              <figure class="testimonial">
+                <img
+                  src="images/customers/customer-4.jpg"
+                  alt="customer"
+                  class="testimonial-img"
+                />
+                <blockquote class="testimonials-text">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Magni, omnis!
+                </blockquote>
+                <p class="testimonial-name">&mdash; James Morgan</p>
+              </figure>
+              <figure class="testimonial">
+                <img
+                  src="images/customers/customer-5.jpg"
+                  alt="customer"
+                  class="testimonial-img"
+                />
+                <blockquote class="testimonials-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Aliquam, dicta!
+                </blockquote>
+                <p class="testimonial-name">&mdash; Kabir Luthra</p>
+              </figure>
+              <figure class="testimonial">
+                <img
+                  src="images/customers/customer-6.jpg"
+                  alt="customer"
+                  class="testimonial-img"
+                />
+                <blockquote class="testimonials-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Neque, officia.
+                </blockquote>
+                <p class="testimonial-name">&mdash; Hannah Smith</p>
+              </figure>
+              <figure class="testimonial">
+                <img
+                  src="images/customers/customer-7.jpg"
+                  alt="customer"
+                  class="testimonial-img"
+                />
+                <blockquote class="testimonials-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Neque, officia.
+                </blockquote>
+                <p class="testimonial-name">&mdash; Ivan Hughes</p>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- <section class="section-trainers" id="trainers"></section> -->
       <section class="section-cta" id="cta">
         <div class="cta">
           <div class="cta-text-box">
-            <h2 class="heading-secondary">Claim your free 14 days now !</h2>
+            <h2 class="heading-secondary">
+              Subscribe to our Weekly Newsletter !
+            </h2>
             <p class="cta-text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptates rem laborum fugit, odio alias hic eligendi ducimus
-              magni, quibusdam tenetur ipsum at, suscipit repellendus! Quae
-              blanditiis quasi totam dolorum fuga.
+              Learn more about fitness, diets, workouts and healthy lifestyle
+              with us. Health is not something to be wasted since we all know
+              <b>HEALTH is WEALTH</b>.
             </p>
             <form action="#" class="cta-form">
               <div>
@@ -510,7 +622,7 @@
           </div>
         </div>
         <div class="credit">
-          Created with <span>&hearts;</span> By &dash; KD
+          Created with <span>&hearts;</span> by &dash; KD
         </div>
       </footer>
     </main>
