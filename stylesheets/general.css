@@ -1,147 +1,157 @@
+/* For Whole Webpage */
+
 * {
-  /* background-color: #000; */
-  /* color: #dddddd; */
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+    /* background-color: #000; */
+    /* color: #dddddd; */
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 html {
-  font-size: 62.5%;
-  overflow-x: hidden;
-  background-color: #000;
+    font-size: 62.5%;
+    overflow-x: hidden;
+    background-color: #000;
 
-  /* Does NOT work on Safari */
-  /* scroll-behavior: smooth; */
+    /* Does NOT work on Safari */
+    /* scroll-behavior: smooth; */
 }
 
 .sub-heading {
-  font-size: 3.2rem;
-  padding-left: 100rem;
-  padding-bottom: 10rem;
-  font-family: "Rubik", sans-serif;
-  text-transform: uppercase;
-  font-weight: 600;
-  color: #787878ad;
+    font-size: 3.2rem;
+    padding-left: 100rem;
+    padding-bottom: 10rem;
+    font-family: "Rubik", sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #787878ad;
 }
 
+/* For Carousel */
+
 .carousel {
-  display: flex;
+    display: flex;
 }
 
 .carousel-inner img {
-  width: 100%;
-  height: 100%;
-  margin: 0 auto;
-  filter: brightness(70%);
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    filter: brightness(70%);
 }
 
 .carousel-item {
-  height: 60rem;
-  width: 100%;
-  position: relative;
+    height: 60rem;
+    width: 100%;
+    position: relative;
 }
 
+/* For Display -> GRID */
+
 .grid {
-  display: grid;
-  row-gap: 9.6rem;
-  column-gap: 6.4rem;
-  /* margin-bottom: 9.6rem; */
+    display: grid;
+    row-gap: 9.6rem;
+    column-gap: 6.4rem;
+    /* margin-bottom: 9.6rem; */
 }
 
 .grid--2--cols {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
 
 .grid--3--cols {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .grid--4--cols {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
 }
 
 .grid--5--cols {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
 }
 
+/* For Lists */
+
 .list {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 1.6rem;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
 }
 
 .list-items {
-  font-size: 1.8rem;
-  display: flex;
-  align-items: center;
-  gap: 1.6rem;
-  line-height: 1.2;
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+    line-height: 1.2;
 }
 
 .list-icon {
-  width: 3rem;
-  height: 3rem;
-  color: #cbcbcb;
+    width: 3rem;
+    height: 3rem;
+    color: #cbcbcb;
 }
+
+/* For Buttons */
 
 .btn,
 .btn:link,
 .btn:visited {
-  display: inline-block;
-  text-decoration: none;
-  font-size: 2rem;
-  font-weight: 600;
-  padding: 1.6rem 3.2rem;
-  border-radius: 9px;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 1.6rem 3.2rem;
+    border-radius: 9px;
 
-  /* only necessary for .btn */
-  border: none;
-  cursor: pointer;
-  font-family: inherit;
+    /* only necessary for .btn */
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
 
-  /* Put transition on original "state" */
-  transition: all 0.3s;
+    /* Put transition on original "state" */
+    transition: all 0.3s;
 }
 
 .btn--full:link,
 .btn--full:visited {
-  background-color: #e33838;
-  color: #fff;
+    background-color: #e33838;
+    color: #fff;
 }
 
 .btn--full:hover,
 .btn--full:active {
-  background-color: #a12424;
+    background-color: #a12424;
 }
 
 .btn--outline:link,
 .btn--outline:visited {
-  background-color: #fff;
-  color: #555;
+    background-color: #fff;
+    color: #555;
 }
 
 .btn--outline:hover,
 .btn--outline:active {
-  background-color: #fdf2e9;
-  /* border: 3px solid #fff; */
-  /* Trick to add border inside */
-  box-shadow: inset 0 0 0 3px #fff;
+    background-color: #fdf2e9;
+    /* border: 3px solid #fff; */
+    /* Trick to add border inside */
+    box-shadow: inset 0 0 0 3px #fff;
 }
 
 .btn--form {
-  background-color: #490f0f;
-  color: #cacaca;
-  align-self: end;
-  padding: 1.2rem;
+    background-color: #490f0f;
+    color: #cacaca;
+    align-self: end;
+    padding: 1.2rem;
 }
 
 .btn--form:hover {
-  background-color: #cacaca;
-  color: #830000;
+    background-color: #cacaca;
+    color: #830000;
 }

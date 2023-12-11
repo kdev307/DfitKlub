@@ -1,630 +1,664 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>be Fit be Discipline</title>
-    <link rel="icon" href="images/logo (2).png" type="image/x-icon" />
-    <link rel="apple-touch-icon" href="images/logo (2).png" />
-    <link rel="manifest" href="manifest.webmanifest" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
-    />
-    <link rel="stylesheet" type="text/css" href="stylesheets/general.css" />
-    <link rel="stylesheet" type="text/css" href="stylesheets/style.css" />
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>be Fit be Discipline</title>
+        <link rel="icon" href="images/logo (2).png" type="image/x-icon" />
+        <link rel="apple-touch-icon" href="images/logo (2).png" />
+        <link rel="manifest" href="manifest.webmanifest" />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        />
+        <link rel="stylesheet" type="text/css" href="stylesheets/general.css" />
+        <link rel="stylesheet" type="text/css" href="stylesheets/home.css" />
+        <link rel="stylesheet" type="text/css" href="stylesheets/modal-view.css" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Edu+NSW+ACT+Foundation:wght@500;700;800;900&family=Poppins:wght@400;600;700&family=Rubik:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Edu+NSW+ACT+Foundation:wght@500;700;800;900&family=Poppins:wght@400;600;700&family=Rubik:wght@400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
 
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
 
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
-    ></script>
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
-    ></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        <script
+            type="module"
+            src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+        ></script>
 
-    <script
-      defer
-      src="// https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
-    ></script>
-  </head>
-  <body>
-    <header class="header">
-      <a href="#">
-        <img src="images/logo (1).png" alt="D'fitKlub Logo" class="logo" />
-      </a>
-      <nav class="main-nav">
-        <ul class="main-nav-list">
-          <li><a href="#about" class="main-nav-link">About Us</a></li>
-          <li>
-            <a href="#programs" class="main-nav-link">Programs</a>
-          </li>
-          <li>
-            <a href="#facilities" class="main-nav-link">Facilities</a>
-          </li>
-          <li>
-            <a href="#testimonials" class="main-nav-link">Testimonials</a>
-          </li>
-          <!-- <li>
-            <a href="#trainers" class="main-nav-link">Trainers</a>
-          </li> -->
-        </ul>
-      </nav>
-      <nav class="profile-nav">
-        <ul class="main-nav-log-list">
-          <li>
-            <a href="login.html" class="main-nav-link"
-              ><ion-icon name="person-outline"></ion-icon
-            ></a>
-          </li>
-          <li>
-            <a href="store.html" class="main-nav-link" target="_blank"
-              ><ion-icon name="cart-outline"></ion-icon
-            ></a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <section class="section-hero">
-        <div id="demo" class="carousel slide" data-ride="carousel">
-          <!-- Indicators -->
-          <ul class="carousel-indicators">
-            <li data-target="#demo" data-slide-to="0" class="active"></li>
-            <li data-target="#demo" data-slide-to="1"></li>
-            <li data-target="#demo" data-slide-to="2"></li>
-          </ul>
+        <script
+            defer
+            src="// https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
+        ></script>
 
-          <!-- The slideshow -->
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <p class="carousel-caption hero-message msg1">
-                Join Us for promoting Healthy LifeStyle.
-              </p>
-              <a class="carousel-caption hero-button btn1" href="signUp.html"
-                >Join Now</a
-              >
-              <img src="images/home/hero.jpg" alt="hero1" />
-            </div>
-            <div class="carousel-item">
-              <p class="carousel-caption hero-message msg2">
-                You're Special, so is your Training Plan.
-              </p>
-              <a class="carousel-caption hero-button btn2" href="#programs"
-                >Programs</a
-              >
-              <img src="images/home/hero4.jpg" alt="hero2" />
-            </div>
-            <div class="carousel-item">
-              <p class="carousel-caption hero-message msg3">
-                Get the exclusive athlesuire and equipments at best price.
-              </p>
-              <a
-                class="carousel-caption hero-button btn3"
-                href="store.html"
-                target="_blank"
-                >Shop Now</a
-              >
-              <img src="images/home/athl - Copy.jpg" alt="Shop Now" />
-            </div>
-          </div>
-
-          <!-- Left and right controls -->
-          <a class="carousel-control-prev" href="#demo" data-slide="prev">
-            <span class="carousel-control-prev-icon"></span>
-          </a>
-          <a class="carousel-control-next" href="#demo" data-slide="next">
-            <span class="carousel-control-next-icon"></span>
-          </a>
-        </div>
-      </section>
-      <section class="section-about" id="about">
-        <span class="sub-heading"> About Us </span>
-        <div class="about">
-          <div class="about-img-box">
-            <img
-              class="about-img"
-              src="images/home/about-us.jpg"
-              alt="Crunches Image"
-            />
-          </div>
-          <div class="about-text">
-            <span>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Laboriosam repellat aliquid recusandae ab cum deleniti, provident
-              commodi! Ratione aut quos voluptas suscipit ipsam alias quidem.
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
-              vel corrupti quis quibusdam ipsa cumque, explicabo nesciunt dolor
-              tenetur aliquid magni, odio provident ratione. Aliquid earum harum
-              qui quaerat recusandae. Animi aspernatur iure repudiandae soluta.
-            </span>
-            <div class="passes">
-              <div class="pass">
-                <span class="pelite">ELITE</span>
-                <p class="pass-message">
-                  Unlimited access to all group classes, at-home workouts and
-                  elite perks.
-                </p>
-              </div>
-              <div class="pass">
-                <span class="ppro">PRO</span>
-                <p class="pass-message">
-                  Unlimited access to all group classes, at-home workouts and
-                  pro perks.
-                </p>
-              </div>
-              <div class="pass">
-                <span class="phome">HOME</span>
-                <p class="pass-message">
-                  Unlimited access to all at-home workouts and health
-                  monitoring.
-                </p>
-              </div>
-            </div>
-            <span class="about-explore">
-              <a href="#facilities">◀ EXPLORE FITPASSES ▶</a>
-            </span>
-          </div>
-        </div>
-      </section>
-      <section class="section-programs" id="programs">
-        <span class="sub-heading"> Programs </span>
-
-        <div class="programs">
-          <div class="program-img-box">
-            <img
-              class="program-img"
-              src="images/home/P-meditation.jpg"
-              alt="Meditation"
-            />
-          </div>
-          <div class="program-names grid">
-            <div class="row1 grid--3--cols">
-              <div class="program">Gym</div>
-              <div class="program">Zumba</div>
-              <div class="program">Sports</div>
-            </div>
-            <div class="row2 grid--2--cols">
-              <div class="program">Home Workout</div>
-              <div class="program">Spa & Massage</div>
-            </div>
-            <div class="row3 grid--3--cols">
-              <div class="program">Therapy</div>
-              <div class="program">Yoga</div>
-              <div class="program">Meditation</div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="section-facilities" id="facilities">
-        <span class="sub-heading">Passes for everyone.</span>
-        <div class="pricing grid grid--3--cols">
-          <div class="plan pricing-plan--elite">
-            <!-- PLAN ELITE -->
-            <header class="plan-header">
-              <div class="fp">fitPass</div>
-              <p class="plan-name pass pelite">ELITE</p>
-              <p class="plan-price"><span>$</span>15</p>
-              <p class="plan-text">per month. That's just $0.75 per session!</p>
-            </header>
-            <ul class="list">
-              <li class="list-items">
-                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon
-                ><span>1 session per day</span>
-              </li>
-              <li class="list-items">
-                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon
-                ><span>Access at all Centers 9am to 9pm</span>
-              </li>
-              <li class="list-items">
-                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon
-                ><span>Elite Membership Benefits</span>
-              </li>
-              <li class="list-items">
-                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon
-                ><span>Group Training</span>
-              </li>
-              <li class="list-items">
-                <ion-icon class="list-icon" name="close-outline"></ion-icon>
-              </li>
-            </ul>
-            <div class="plan-sign-up">
-              <a href="#" class="btn btn--full">Promote Health</a>
-            </div>
-          </div>
-          <div class="plan pricing-plan--pro">
-            <!-- PLAN PRO -->
-            <header class="plan-header">
-              <div class="fp">fitPass</div>
-              <p class="plan-name pass ppro">PRO</p>
-              <p class="plan-price"><span>$</span>20</p>
-              <p class="plan-text">per month. That's just $1 per session !</p>
-            </header>
-            <ul class="list">
-              <li class="list-items">
-                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon
-                ><span>1 session per day</span>
-              </li>
-              <li class="list-items">
-                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon
-                ><span>Access at all Centers 6am to 9pm</span>
-              </li>
-              <li class="list-items">
-                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon
-                ><span>Pro Membership Benefits</span>
-              </li>
-              <li class="list-items">
-                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon
-                ><span>Group/Personal Training</span>
-              </li>
-              <li class="list-items">
-                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon
-                ><span>Celebrity Workouts</span>
-              </li>
-            </ul>
-            <div class="plan-sign-up">
-              <a href="#" class="btn btn--full">Promote Health</a>
-            </div>
-          </div>
-          <div class="plan pricing-plan--home">
-            <!-- PLAN HOME -->
-            <header class="plan-header">
-              <div class="fp">fitPass</div>
-              <p class="plan-name pass phome">HOME</p>
-              <p class="plan-price"><span>$</span>2.5</p>
-              <p class="plan-text">
-                per month. That's just $0.125 per session !
-              </p>
-            </header>
-            <ul class="list">
-              <li class="list-items">
-                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon
-                ><span>Sessions especially for you</span>
-              </li>
-              <li class="list-items">
-                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon
-                ><span>24/7 Workout Availabe</span>
-              </li>
-              <li class="list-items">
-                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon
-                ><span>At Home Workouts</span>
-              </li>
-              <li class="list-items">
-                <ion-icon class="list-icon" name="close-outline"></ion-icon>
-              </li>
-              <li class="list-items">
-                <ion-icon class="list-icon" name="close-outline"></ion-icon>
-              </li>
-            </ul>
-            <div class="plan-sign-up">
-              <a href="#" class="btn btn--full">Promote Health</a>
-            </div>
-          </div>
-        </div>
-        <div class="container grid">
-          <aside class="plan-details">
-            Prices include all applicable taxes. You can cancel at any time.
-            Every plan includes the following:
-          </aside>
-        </div>
-        <div class="features grid--4--cols">
-          <div class="feature">
-            <ion-icon class="feature-icon" name="restaurant-outline"></ion-icon>
-            <p class="feature-title">Diet Recommendation</p>
-            <p class="feature-text">
-              Get personalised diet recommendations according to your goals.
-            </p>
-          </div>
-          <div class="feature">
-            <ion-icon class="feature-icon" name="fitness-outline"></ion-icon>
-            <p class="feature-title">Health Check-ups</p>
-            <p class="feature-text">
-              Regular health check-up sessions at discounted price.
-            </p>
-          </div>
-          <div class="feature">
-            <ion-icon class="feature-icon" name="time-outline"></ion-icon>
-            <p class="feature-title">Regular Sessions</p>
-            <p class="feature-text">
-              Reminder for the sessions regularly, 20 sessions per month.
-            </p>
-          </div>
-          <div class="feature">
-            <ion-icon class="feature-icon" name="shirt-outline"></ion-icon>
-            <p class="feature-title">Athlesuire Discount</p>
-            <p class="feature-text">
-              Get discount on purchase of athlesuire from our website.
-            </p>
-          </div>
-        </div>
-      </section>
-      <section class="section-testimonials" id="testimonials">
-        <span class="sub-heading"> Testimonials </span>
-        <h2 class="sub-heading">They changed their Lifestyle, You can too !</h2>
-        <div class="testimonial-sect grid--2--cols">
-          <div class="gallery-container">
-            <div class="gallery">
-              <figure class="gallery-item gallery-img-1">
-                <img
-                  src="images/home/gallery-1.jpg"
-                  alt="Gallery"
-                  class="gallery-img"
-                />
-              </figure>
-              <figure class="gallery-item gallery-img-2">
-                <img
-                  src="images/home/gallery-2.jpg"
-                  alt="Gallery"
-                  class="gallery-img"
-                />
-              </figure>
-              <figure class="gallery-item gallery-img-3">
-                <img
-                  src="images/home/gallery-3.jpg"
-                  alt="Gallery"
-                  class="gallery-img"
-                />
-              </figure>
-              <figure class="gallery-item gallery-img-4">
-                <img
-                  src="images/home/gallery-4.jpg"
-                  alt="Gallery"
-                  class="gallery-img"
-                />
-              </figure>
-              <figure class="gallery-item gallery-img-5">
-                <img
-                  src="images/home/gallery-5.jpg"
-                  alt="Gallery"
-                  class="gallery-img"
-                />
-              </figure>
-              <figure class="gallery-item gallery-img-6">
-                <img
-                  src="images/home/gallery-6.jpg"
-                  alt="Gallery"
-                  class="gallery-img"
-                />
-              </figure>
-              <figure class="gallery-item gallery-img-7">
-                <img
-                  src="images/home/gallery-7.jpg"
-                  alt="Gallery"
-                  class="gallery-img"
-                />
-              </figure>
-              <figure class="gallery-item gallery-img-8">
-                <img
-                  src="images/home/gallery-8.jpg"
-                  alt="Gallery"
-                  class="gallery-img"
-                />
-              </figure>
-              <figure class="gallery-item gallery-img-9">
-                <img
-                  src="images/home/gallery-9.jpg"
-                  alt="Gallery"
-                  class="gallery-img"
-                />
-              </figure>
-              <figure class="gallery-item gallery-img-10">
-                <img
-                  src="images/home/gallery-10.jpg"
-                  alt="Gallery"
-                  class="gallery-img"
-                />
-              </figure>
-            </div>
-          </div>
-          <div class="testimonial-container">
-            <div class="testimonials">
-              <figure class="testimonial">
-                <img
-                  src="images/customers/customer-2.jpg"
-                  alt="customer"
-                  class="testimonial-img"
-                />
-                <blockquote class="testimonials-text">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Culpa, recusandae!
-                </blockquote>
-                <p class="testimonial-name">&mdash; Dave Bryson</p>
-              </figure>
-              <figure class="testimonial">
-                <img
-                  src="images/customers/customer-3.jpg"
-                  alt="customer"
-                  class="testimonial-img"
-                />
-                <blockquote class="testimonials-text">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Voluptatum, veritatis.
-                </blockquote>
-                <p class="testimonial-name">&mdash; Sophie Watson</p>
-              </figure>
-              <figure class="testimonial">
-                <img
-                  src="images/customers/customer-4.jpg"
-                  alt="customer"
-                  class="testimonial-img"
-                />
-                <blockquote class="testimonials-text">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Magni, omnis!
-                </blockquote>
-                <p class="testimonial-name">&mdash; James Morgan</p>
-              </figure>
-              <figure class="testimonial">
-                <img
-                  src="images/customers/customer-5.jpg"
-                  alt="customer"
-                  class="testimonial-img"
-                />
-                <blockquote class="testimonials-text">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Aliquam, dicta!
-                </blockquote>
-                <p class="testimonial-name">&mdash; Kabir Luthra</p>
-              </figure>
-              <figure class="testimonial">
-                <img
-                  src="images/customers/customer-6.jpg"
-                  alt="customer"
-                  class="testimonial-img"
-                />
-                <blockquote class="testimonials-text">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Neque, officia.
-                </blockquote>
-                <p class="testimonial-name">&mdash; Hannah Smith</p>
-              </figure>
-              <figure class="testimonial">
-                <img
-                  src="images/customers/customer-7.jpg"
-                  alt="customer"
-                  class="testimonial-img"
-                />
-                <blockquote class="testimonials-text">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Neque, officia.
-                </blockquote>
-                <p class="testimonial-name">&mdash; Ivan Hughes</p>
-              </figure>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- <section class="section-trainers" id="trainers"></section> -->
-      <section class="section-cta" id="cta">
-        <div class="cta">
-          <div class="cta-text-box">
-            <h2 class="heading-secondary">
-              Subscribe to our Weekly Newsletter !
-            </h2>
-            <p class="cta-text">
-              Learn more about fitness, diets, workouts and healthy lifestyle
-              with us. Health is not something to be wasted since we all know
-              <b>HEALTH is WEALTH</b>.
-            </p>
-            <form action="#" class="cta-form">
-              <div>
-                <label for="full-name">Full Name</label>
-                <input
-                  type="text"
-                  placeholder="John Smith"
-                  name=""
-                  id="full-name"
-                  required
-                />
-              </div>
-              <div>
-                <label for="email">Email Address</label>
-                <input
-                  type="email"
-                  placeholder="me@example.com"
-                  id="email"
-                  required
-                />
-              </div>
-              <div>
-                <label for="select-where">Where did you hear from us ?</label>
-                <select name="" id="select-where" required>
-                  <option value="">Please choose one option:</option>
-                  <option value="friends">Friends and family</option>
-                  <option value="youtube">Youtube Video</option>
-                  <option value="podcast">Podcast</option>
-                  <option value="facebook">Facebook ad</option>
-                  <option value="others">Others</option>
-                </select>
-              </div>
-              <button class="btn btn--form">Sign Up Now</button>
-            </form>
-          </div>
-          <div class="cta-img-box" role="img" aria-label="Man Resting"></div>
-        </div>
-      </section>
-      <footer class="footer">
-        <div class="grid--footer">
-          <div class="address-col">
-            <address class="contacts grid--3--cols">
-              <div>
-                <figure class="location">
-                  <ion-icon
-                    class="contacts-icon"
-                    name="location-outline"
-                  ></ion-icon>
-                  <figcaption>
-                    <p>Sovereign Tower, CA 94107</p>
-                  </figcaption>
-                </figure>
-              </div>
-              <figure class="mobile">
-                <ion-icon class="contacts-icon" name="call-outline"></ion-icon>
-                <figcaption>
-                  <a class="footer-link" href="tel:415-201-6370"
-                    >415-201-6370</a
-                  >
-                </figcaption>
-              </figure>
-              <figure class="mail">
-                <ion-icon class="contacts-icon" name="mail-outline"></ion-icon>
-                <figcaption>
-                  <a class="footer-link" href="malito:help@fitklub.com"
-                    >help@fitklub.com</a
-                  >
-                </figcaption>
-              </figure>
-            </address>
-          </div>
-          <div class="follow grid--5--cols">
-            <a href="#">
-              <ion-icon class="follow-icon" name="logo-facebook"></ion-icon>
+        <script src="javascript/modalView.js"></script>
+    </head>
+    <body>
+        <header class="header">
+            <a href="index.html">
+                <img src="images/logo (1).png" alt="D'fitKlub Logo" class="logo" id="home" />
             </a>
-            <a href="#">
-              <ion-icon class="follow-icon" name="logo-instagram"></ion-icon>
-            </a>
-            <a href="#">
-              <ion-icon class="follow-icon" name="logo-linkedin"></ion-icon>
-            </a>
-            <a href="#">
-              <ion-icon class="follow-icon" name="logo-twitter"></ion-icon>
-            </a>
-            <a href="#">
-              <ion-icon class="follow-icon" name="logo-youtube"></ion-icon>
-            </a>
-          </div>
-          <a class="" href="#">
-            <img
-              src="images/logo (1).png"
-              alt="D'fitKlub Logo"
-              class="footer-logo logo"
-            />
-          </a>
-          <div class="copy">
-            <p class="copyright">
-              Copyright © <span class="year">2023</span> by D-fitKlub.Inc. All
-              rights are reserved.
-            </p>
-          </div>
-        </div>
-        <div class="credit">
-          Created with <span>&hearts;</span> by &dash; KD
-        </div>
-      </footer>
-    </main>
-  </body>
+            <nav class="main-nav">
+                <ul class="main-nav-list">
+                    <li><a href="#about" class="main-nav-link">About Us</a></li>
+                    <li>
+                        <a href="#programs" class="main-nav-link">Programs</a>
+                    </li>
+                    <li>
+                        <a href="#facilities" class="main-nav-link">Facilities</a>
+                    </li>
+                    <li>
+                        <a href="#testimonials" class="main-nav-link">Testimonials</a>
+                    </li>
+                    <!-- <li>
+                        <a href="#trainers" class="main-nav-link">Trainers</a>
+                    </li> -->
+                </ul>
+            </nav>
+            <nav class="profile-nav">
+                <ul class="main-nav-user-list">
+                    <li>
+                        <div
+                            class="main-nav-link profile-btn"
+                            onclick="showOverlay()"
+                            id="overlay-btn"
+                        >
+                            <ion-icon name="person-outline"></ion-icon>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="store.html" class="main-nav-link" target="_blank"
+                            ><ion-icon name="cart-outline"></ion-icon
+                        ></a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="section-overlay">
+                <div class="overlay-section" id="overlay-section">
+                    <div class="overlay-view">
+                        <div class="close-btn" onclick="hideOverlay()" id="overlay-hide">
+                            <ion-icon name="close-outline"></ion-icon>
+                        </div>
+                        <h1 class="heading-secondary">Sign In</h1>
+                        <form action="#" class="sign-in-form">
+                            <div>
+                                <label for="user-name">Username</label>
+                                <input
+                                    type="text"
+                                    placeholder="Enter your Username"
+                                    id="user-name"
+                                    required
+                                />
+                            </div>
+                            <div>
+                                <label for="password">Password</label>
+                                <input
+                                    type="password"
+                                    id="password"
+                                    placeholder="Enter your password"
+                                    required
+                                />
+                            </div>
+                            <button class="">Sign In</button>
+                        </form>
+                        <div class="other-sign-in">
+                            New User Registeration: <a href="signup.html">Click Here</a>
+                            <br />
+                            Admin Sign In: <a href="adminSignIn.html">Click Here</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section-hero">
+                <div id="demo" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ul class="carousel-indicators">
+                        <li data-target="#demo" data-slide-to="0" class="active"></li>
+                        <li data-target="#demo" data-slide-to="1"></li>
+                        <li data-target="#demo" data-slide-to="2"></li>
+                    </ul>
+
+                    <!-- The slideshow -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <p class="carousel-caption hero-message msg1">
+                                Join Us for promoting Healthy LifeStyle.
+                            </p>
+                            <a class="carousel-caption hero-button btn1" href="signUp.html"
+                                >Join Now</a
+                            >
+                            <img src="images/home/hero.jpg" alt="hero1" />
+                        </div>
+                        <div class="carousel-item">
+                            <p class="carousel-caption hero-message msg2">
+                                You're Special, so is your Training Plan.
+                            </p>
+                            <a class="carousel-caption hero-button btn2" href="#programs"
+                                >Programs</a
+                            >
+                            <img src="images/home/hero4.jpg" alt="hero2" />
+                        </div>
+                        <div class="carousel-item">
+                            <p class="carousel-caption hero-message msg3">
+                                Get the exclusive athlesuire and equipments at best price.
+                            </p>
+                            <a
+                                class="carousel-caption hero-button btn3"
+                                href="store.html"
+                                target="_blank"
+                                >Shop Now</a
+                            >
+                            <img src="images/home/athl - Copy.jpg" alt="Shop Now" />
+                        </div>
+                    </div>
+
+                    <!-- Left and right controls -->
+                    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#demo" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+                </div>
+            </section>
+            <section class="section-about" id="about">
+                <span class="sub-heading"> About Us </span>
+                <div class="about">
+                    <div class="about-img-box">
+                        <img
+                            class="about-img"
+                            src="images/home/about-us.jpg"
+                            alt="Crunches Image"
+                        />
+                    </div>
+                    <div class="about-text">
+                        <span>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam
+                            repellat aliquid recusandae ab cum deleniti, provident commodi! Ratione
+                            aut quos voluptas suscipit ipsam alias quidem. Lorem ipsum dolor sit
+                            amet consectetur adipisicing elit. Tempora vel corrupti quis quibusdam
+                            ipsa cumque, explicabo nesciunt dolor tenetur aliquid magni, odio
+                            provident ratione. Aliquid earum harum qui quaerat recusandae. Animi
+                            aspernatur iure repudiandae soluta.
+                        </span>
+                        <div class="passes">
+                            <div class="pass">
+                                <span class="pelite">ELITE</span>
+                                <p class="pass-message">
+                                    Unlimited access to all group classes, at-home workouts and
+                                    elite perks.
+                                </p>
+                            </div>
+                            <div class="pass">
+                                <span class="ppro">PRO</span>
+                                <p class="pass-message">
+                                    Unlimited access to all group classes, at-home workouts and pro
+                                    perks.
+                                </p>
+                            </div>
+                            <div class="pass">
+                                <span class="phome">HOME</span>
+                                <p class="pass-message">
+                                    Unlimited access to all at-home workouts and health monitoring.
+                                </p>
+                            </div>
+                        </div>
+                        <span class="about-explore">
+                            <a href="#facilities">◀ EXPLORE FITPASSES ▶</a>
+                        </span>
+                    </div>
+                </div>
+            </section>
+            <section class="section-programs" id="programs">
+                <span class="sub-heading"> Programs </span>
+
+                <div class="programs">
+                    <div class="program-img-box">
+                        <img
+                            class="program-img"
+                            src="images/home/P-meditation.jpg"
+                            alt="Meditation"
+                        />
+                    </div>
+                    <div class="program-names grid">
+                        <div class="row1 grid--3--cols">
+                            <div class="program">Gym</div>
+                            <div class="program">Zumba</div>
+                            <div class="program">Sports</div>
+                        </div>
+                        <div class="row2 grid--2--cols">
+                            <div class="program">Home Workout</div>
+                            <div class="program">Spa & Massage</div>
+                        </div>
+                        <div class="row3 grid--3--cols">
+                            <div class="program">Therapy</div>
+                            <div class="program">Yoga</div>
+                            <div class="program">Meditation</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section-facilities" id="facilities">
+                <span class="sub-heading">Passes for everyone.</span>
+                <div class="pricing grid grid--3--cols">
+                    <div class="plan pricing-plan--elite">
+                        <!-- PLAN ELITE -->
+                        <header class="plan-header">
+                            <div class="fp">fitPass</div>
+                            <p class="plan-name pass pelite">ELITE</p>
+                            <p class="plan-price"><span>$</span>15</p>
+                            <p class="plan-text">per month. That's just $0.75 per session!</p>
+                        </header>
+                        <ul class="list">
+                            <li class="list-items">
+                                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon
+                                ><span>1 session per day</span>
+                            </li>
+                            <li class="list-items">
+                                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon
+                                ><span>Access at all Centers 9am to 9pm</span>
+                            </li>
+                            <li class="list-items">
+                                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon
+                                ><span>Elite Membership Benefits</span>
+                            </li>
+                            <li class="list-items">
+                                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon
+                                ><span>Group Training and more</span>
+                            </li>
+                            <li class="list-items">
+                                <ion-icon class="list-icon" name="close-outline"></ion-icon>
+                            </li>
+                        </ul>
+                        <div class="plan-sign-up">
+                            <a href="#" class="btn btn--full">Promote Health</a>
+                        </div>
+                    </div>
+                    <div class="plan pricing-plan--pro">
+                        <!-- PLAN PRO -->
+                        <header class="plan-header">
+                            <div class="fp">fitPass</div>
+                            <p class="plan-name pass ppro">PRO</p>
+                            <p class="plan-price"><span>$</span>20</p>
+                            <p class="plan-text">per month. That's just $1 per session !</p>
+                        </header>
+                        <ul class="list">
+                            <li class="list-items">
+                                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon
+                                ><span>1 session per day</span>
+                            </li>
+                            <li class="list-items">
+                                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon
+                                ><span>Access at all Centers 6am to 9pm</span>
+                            </li>
+                            <li class="list-items">
+                                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon
+                                ><span>Pro Membership Benefits</span>
+                            </li>
+                            <li class="list-items">
+                                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon
+                                ><span>Celebrity Workouts</span>
+                            </li>
+                            <li class="list-items">
+                                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon
+                                ><span>Group/Personal Training and many more</span>
+                            </li>
+                        </ul>
+                        <div class="plan-sign-up">
+                            <a href="#" class="btn btn--full">Promote Health</a>
+                        </div>
+                    </div>
+                    <div class="plan pricing-plan--home">
+                        <!-- PLAN HOME -->
+                        <header class="plan-header">
+                            <div class="fp">fitPass</div>
+                            <p class="plan-name pass phome">HOME</p>
+                            <p class="plan-price"><span>$</span>2.5</p>
+                            <p class="plan-text">per month. That's just $0.125 per session !</p>
+                        </header>
+                        <ul class="list">
+                            <li class="list-items">
+                                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon
+                                ><span>Sessions especially for you</span>
+                            </li>
+                            <li class="list-items">
+                                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon
+                                ><span>24/7 Workout Availabe</span>
+                            </li>
+                            <li class="list-items">
+                                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon
+                                ><span>At Home Workouts</span>
+                            </li>
+                            <li class="list-items">
+                                <ion-icon class="list-icon" name="close-outline"></ion-icon>
+                            </li>
+                            <li class="list-items">
+                                <ion-icon class="list-icon" name="close-outline"></ion-icon>
+                            </li>
+                        </ul>
+                        <div class="plan-sign-up">
+                            <a href="#" class="btn btn--full">Promote Health</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="container grid">
+                    <aside class="plan-details">
+                        Prices include all applicable taxes. You can cancel at any time. Every plan
+                        includes the following:
+                    </aside>
+                </div>
+                <div class="features grid--4--cols">
+                    <div class="feature">
+                        <ion-icon class="feature-icon" name="restaurant-outline"></ion-icon>
+                        <p class="feature-title">Diet Recommendation</p>
+                        <p class="feature-text">
+                            Get personalised diet recommendations according to your goals.
+                        </p>
+                    </div>
+                    <div class="feature">
+                        <ion-icon class="feature-icon" name="fitness-outline"></ion-icon>
+                        <p class="feature-title">Health Check-ups</p>
+                        <p class="feature-text">
+                            Regular health check-up sessions at discounted price.
+                        </p>
+                    </div>
+                    <div class="feature">
+                        <ion-icon class="feature-icon" name="time-outline"></ion-icon>
+                        <p class="feature-title">Regular Sessions</p>
+                        <p class="feature-text">
+                            Reminder for the sessions regularly, 20 sessions per month.
+                        </p>
+                    </div>
+                    <div class="feature">
+                        <ion-icon class="feature-icon" name="shirt-outline"></ion-icon>
+                        <p class="feature-title">Athlesuire Discount</p>
+                        <p class="feature-text">
+                            Get discount on purchase of athlesuire from our website.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section class="section-testimonials" id="testimonials">
+                <span class="sub-heading"> Testimonials </span>
+                <h2 class="sub-heading">They changed their Lifestyle, You can too !</h2>
+                <div class="testimonial-sect grid--2--cols">
+                    <div class="gallery-container">
+                        <div class="gallery">
+                            <figure class="gallery-item gallery-img-1">
+                                <img
+                                    src="images/home/gallery-1.jpg"
+                                    alt="Gallery"
+                                    class="gallery-img"
+                                />
+                            </figure>
+                            <figure class="gallery-item gallery-img-2">
+                                <img
+                                    src="images/home/gallery-2.jpg"
+                                    alt="Gallery"
+                                    class="gallery-img"
+                                />
+                            </figure>
+                            <figure class="gallery-item gallery-img-3">
+                                <img
+                                    src="images/home/gallery-3.jpg"
+                                    alt="Gallery"
+                                    class="gallery-img"
+                                />
+                            </figure>
+                            <figure class="gallery-item gallery-img-4">
+                                <img
+                                    src="images/home/gallery-4.jpg"
+                                    alt="Gallery"
+                                    class="gallery-img"
+                                />
+                            </figure>
+                            <figure class="gallery-item gallery-img-5">
+                                <img
+                                    src="images/home/gallery-5.jpg"
+                                    alt="Gallery"
+                                    class="gallery-img"
+                                />
+                            </figure>
+                            <figure class="gallery-item gallery-img-6">
+                                <img
+                                    src="images/home/gallery-6.jpg"
+                                    alt="Gallery"
+                                    class="gallery-img"
+                                />
+                            </figure>
+                            <figure class="gallery-item gallery-img-7">
+                                <img
+                                    src="images/home/gallery-7.jpg"
+                                    alt="Gallery"
+                                    class="gallery-img"
+                                />
+                            </figure>
+                            <figure class="gallery-item gallery-img-8">
+                                <img
+                                    src="images/home/gallery-8.jpg"
+                                    alt="Gallery"
+                                    class="gallery-img"
+                                />
+                            </figure>
+                            <figure class="gallery-item gallery-img-9">
+                                <img
+                                    src="images/home/gallery-9.jpg"
+                                    alt="Gallery"
+                                    class="gallery-img"
+                                />
+                            </figure>
+                            <figure class="gallery-item gallery-img-10">
+                                <img
+                                    src="images/home/gallery-10.jpg"
+                                    alt="Gallery"
+                                    class="gallery-img"
+                                />
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="testimonial-container">
+                        <div class="testimonials">
+                            <figure class="testimonial">
+                                <img
+                                    src="images/customers/customer-2.jpg"
+                                    alt="customer"
+                                    class="testimonial-img"
+                                />
+                                <blockquote class="testimonials-text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa,
+                                    recusandae!
+                                </blockquote>
+                                <p class="testimonial-name">&mdash; Dave Bryson</p>
+                            </figure>
+                            <figure class="testimonial">
+                                <img
+                                    src="images/customers/customer-3.jpg"
+                                    alt="customer"
+                                    class="testimonial-img"
+                                />
+                                <blockquote class="testimonials-text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Voluptatum, veritatis.
+                                </blockquote>
+                                <p class="testimonial-name">&mdash; Sophie Watson</p>
+                            </figure>
+                            <figure class="testimonial">
+                                <img
+                                    src="images/customers/customer-4.jpg"
+                                    alt="customer"
+                                    class="testimonial-img"
+                                />
+                                <blockquote class="testimonials-text">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni,
+                                    omnis!
+                                </blockquote>
+                                <p class="testimonial-name">&mdash; James Morgan</p>
+                            </figure>
+                            <figure class="testimonial">
+                                <img
+                                    src="images/customers/customer-5.jpg"
+                                    alt="customer"
+                                    class="testimonial-img"
+                                />
+                                <blockquote class="testimonials-text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Aliquam, dicta!
+                                </blockquote>
+                                <p class="testimonial-name">&mdash; Kabir Luthra</p>
+                            </figure>
+                            <figure class="testimonial">
+                                <img
+                                    src="images/customers/customer-6.jpg"
+                                    alt="customer"
+                                    class="testimonial-img"
+                                />
+                                <blockquote class="testimonials-text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque,
+                                    officia.
+                                </blockquote>
+                                <p class="testimonial-name">&mdash; Hannah Smith</p>
+                            </figure>
+                            <figure class="testimonial">
+                                <img
+                                    src="images/customers/customer-7.jpg"
+                                    alt="customer"
+                                    class="testimonial-img"
+                                />
+                                <blockquote class="testimonials-text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque,
+                                    officia.
+                                </blockquote>
+                                <p class="testimonial-name">&mdash; Ivan Hughes</p>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- <section class="section-trainers" id="trainers"></section> -->
+            <section class="section-cta" id="cta">
+                <div class="cta">
+                    <div class="cta-text-box">
+                        <h2 class="heading-secondary">Subscribe to our Weekly Newsletter !</h2>
+                        <p class="cta-text">
+                            Learn more about fitness, diets, workouts and healthy lifestyle with us.
+                            Health is not something to be wasted since we all know
+                            <b>HEALTH is WEALTH</b>.
+                        </p>
+                        <form action="#" class="cta-form">
+                            <div>
+                                <label for="full-name">Full Name</label>
+                                <input
+                                    type="text"
+                                    placeholder="John Smith"
+                                    name=""
+                                    id="full-name"
+                                    required
+                                />
+                            </div>
+                            <div>
+                                <label for="email">Email Address</label>
+                                <input
+                                    type="email"
+                                    placeholder="me@example.com"
+                                    id="email"
+                                    required
+                                />
+                            </div>
+                            <div>
+                                <label for="select-where">Where did you hear from us ?</label>
+                                <select name="" id="select-where" required>
+                                    <option value="">Please choose one option:</option>
+                                    <option value="friends">Friends and family</option>
+                                    <option value="youtube">Youtube Video</option>
+                                    <option value="podcast">Podcast</option>
+                                    <option value="facebook">Facebook ad</option>
+                                    <option value="others">Others</option>
+                                </select>
+                            </div>
+                            <button class="btn btn--form">Subscribe</button>
+                        </form>
+                    </div>
+                    <div class="cta-img-box" role="img" aria-label="Man Resting"></div>
+                </div>
+            </section>
+            <footer class="footer" id="footer">
+                <div class="grid--footer">
+                    <div class="address-col">
+                        <address class="contacts grid--3--cols">
+                            <div>
+                                <figure class="location">
+                                    <ion-icon
+                                        class="contacts-icon"
+                                        name="location-outline"
+                                    ></ion-icon>
+                                    <figcaption>
+                                        <p>Sovereign Tower, CA 94107</p>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <figure class="mobile">
+                                <ion-icon class="contacts-icon" name="call-outline"></ion-icon>
+                                <figcaption>
+                                    <a class="footer-link" href="tel:415-201-6370">415-201-6370</a>
+                                </figcaption>
+                            </figure>
+                            <figure class="mail">
+                                <ion-icon class="contacts-icon" name="mail-outline"></ion-icon>
+                                <figcaption>
+                                    <a class="footer-link" href="malito:help@fitklub.com"
+                                        >help@fitklub.com</a
+                                    >
+                                </figcaption>
+                            </figure>
+                        </address>
+                    </div>
+                    <div class="follow grid--5--cols">
+                        <a href="#">
+                            <ion-icon class="follow-icon" name="logo-facebook"></ion-icon>
+                        </a>
+                        <a href="#">
+                            <ion-icon class="follow-icon" name="logo-instagram"></ion-icon>
+                        </a>
+                        <a href="#">
+                            <ion-icon class="follow-icon" name="logo-linkedin"></ion-icon>
+                        </a>
+                        <a href="#">
+                            <ion-icon class="follow-icon" name="logo-twitter"></ion-icon>
+                        </a>
+                        <a href="#">
+                            <ion-icon class="follow-icon" name="logo-youtube"></ion-icon>
+                        </a>
+                    </div>
+                    <a class="" href="#">
+                        <img
+                            src="images/logo (1).png"
+                            alt="D'fitKlub Logo"
+                            class="footer-logo logo"
+                        />
+                    </a>
+                    <div class="copy">
+                        <p class="follow-us-text">follow us</p>
+                        <br />
+                        <br />
+                        <p class="copyright">
+                            Copyright © <span class="year">2023</span> by D-fitKlub.Inc. All rights
+                            are reserved.
+                        </p>
+                    </div>
+                </div>
+                <div class="credit">Created with <span>&hearts;</span> by &dash; KD</div>
+            </footer>
+        </main>
+    </body>
 </html>
