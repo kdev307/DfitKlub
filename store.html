@@ -1,36 +1,350 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="stylesheets/general.css" />
-    <title>fitStore</title>
-    <style>
-      .bgimg {
-        height: 100vh;
-        width: 100vw;
-        background-position: center;
-        background-size: cover;
-        position: relative;
-        font-family: "Courier New", Courier, monospace;
-        filter: brightness(50%);
-      }
-      .middle {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        text-align: center;
-        font-size: 2.4rem;
-      }
-    </style>
-  </head>
-  <body>
-    <div>
-      <img class="bgimg" src="images/home/athl.jpg" alt="Shopping page" />
-    </div>
-    <div class="middle">
-      <h1>COMING SOON</h1>
-    </div>
-  </body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>fitStore- Fitness & Fashion</title>
+        <link rel="icon" href="images/logo (2).png" type="image/x-icon" />
+        <link rel="apple-touch-icon" href="images/logo (2).png" />
+        <link rel="manifest" href="manifest.webmanifest" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Edu+NSW+ACT+Foundation:wght@500;700;800;900&family=Poppins:wght@400;600;700&family=Rubik:wght@400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" type="text/css" href="stylesheets/general.css" />
+        <link rel="stylesheet" type="text/css" href="stylesheets/home.css" />
+        <link rel="stylesheet" type="text/css" href="stylesheets/modal-view.css" />
+        <link rel="stylesheet" type="text/css" href="stylesheets/storeHome.css" />
+    </head>
+
+    <body>
+        <header class="header">
+            <a href="index.html">
+                <img src="images/logo (1).png" alt="D'fitKlub Logo" class="logo" id="home" />
+            </a>
+            <nav class="profile-nav">
+                <ul class="main-nav-user-list">
+                    <li>
+                        <div
+                            class="main-nav-link profile-btn"
+                            onclick="showOverlay()"
+                            id="overlay-btn"
+                        >
+                            <ion-icon name="person-outline"></ion-icon>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="store.html" class="main-nav-link" target="_blank"
+                            ><ion-icon name="cart-outline"></ion-icon
+                        ></a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="section-overlay">
+                <div class="overlay-section" id="overlay-section">
+                    <div class="overlay-view">
+                        <div class="close-btn" onclick="hideOverlay()" id="overlay-hide">
+                            <ion-icon name="close-outline"></ion-icon>
+                        </div>
+                        <h1 class="heading-secondary">Sign In</h1>
+                        <form action="#" class="sign-in-form">
+                            <div>
+                                <label for="user-name">Username</label>
+                                <input
+                                    type="text"
+                                    placeholder="Enter your Username"
+                                    id="user-name"
+                                    required
+                                />
+                            </div>
+                            <div>
+                                <label for="password">Password</label>
+                                <input
+                                    type="password"
+                                    id="password"
+                                    placeholder="Enter your password"
+                                    required
+                                />
+                            </div>
+                            <button class="">Sign In</button>
+                        </form>
+                        <div class="other-sign-in">
+                            New User Registeration: <a href="signup.html">Click Here</a>
+                            <br />
+                            Admin Sign In: <a href="adminSignIn.html">Click Here</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="product-filter">
+                <button class="filter-item active" data-filter="all">ALL</button>
+                <button class="filter-item" data-filter="accessories">Accessories</button>
+                <button class="filter-item" data-filter="coupons">Coupons</button>
+                <button class="filter-item" data-filter="equipments">Equipments</button>
+                <button class="filter-item" data-filter="men">Men</button>
+                <button class="filter-item" data-filter="women">Women</button>
+                <button class="filter-item" data-filter="sports">Sports</button>
+            </section>
+            <section class="product">
+                <div class="product-item sports">
+                    <div class="product-item-inner">
+                        <img src="" alt="Image Not Supoorted" />
+                        <div class="img-title"><span> </span></div>
+                    </div>
+                </div>
+                <div class="product-item sports">
+                    <div class="product-item-inner">
+                        <img src=".jpeg" alt="Image Not Supoorted" />
+                        <div class="img-title"><span> </span></div>
+                    </div>
+                </div>
+                <div class="product-item sports">
+                    <div class="product-item-inner">
+                        <img src="" alt="Image Not Supoorted" />
+                        <div class="img-title"><span> </span></div>
+                    </div>
+                </div>
+                <div class="product-item sports">
+                    <div class="product-item-inner">
+                        <img src="" alt="Image Not Supoorted" />
+                        <div class="img-title"><span> </span></div>
+                    </div>
+                </div>
+                <div class="product-item sports">
+                    <div class="product-item-inner">
+                        <img src="" alt="Image Not Supoorted" />
+                        <div class="img-title"><span> </span></div>
+                    </div>
+                </div>
+                <div class="product-item equipments">
+                    <div class="product-item-inner">
+                        <img src="" alt="Image Not Supoorted" />
+                        <div class="img-title"><span> </span></div>
+                    </div>
+                </div>
+                <div class="product-item equipments">
+                    <div class="product-item-inner">
+                        <img src="" alt="Image Not Supoorted" />
+                        <div class="img-title"><span> </span></div>
+                    </div>
+                </div>
+                <div class="product-item accessories">
+                    <div class="product-item-inner">
+                        <img src="" alt="Image Not Supoorted" />
+                        <div class="img-title"><span> </span></div>
+                    </div>
+                </div>
+                <div class="product-item equipments">
+                    <div class="product-item-inner">
+                        <img src="" alt="Image Not Supoorted" />
+                        <div class="img-title"><span> </span></div>
+                    </div>
+                </div>
+                <div class="product-item sports">
+                    <div class="product-item-inner">
+                        <img src="3" alt="Image Not Supoorted" />
+                        <div class="img-title"><span> </span></div>
+                    </div>
+                </div>
+                <div class="product-item sports">
+                    <div class="product-item-inner">
+                        <img src="" alt="Image Not Supoorted" />
+                        <div class="img-title"><span> </span></div>
+                    </div>
+                </div>
+                <div class="product-item equipments">
+                    <div class="product-item-inner">
+                        <img src="" alt="Image Not Supoorted" />
+                        <div class="img-title"><span> </span></div>
+                    </div>
+                </div>
+                <div class="product-item equipments">
+                    <div class="product-item-inner">
+                        <img src="" alt="Image Not Supoorted" />
+                        <div class="img-title"><span> </span></div>
+                    </div>
+                </div>
+                <div class="product-item sports">
+                    <div class="product-item-inner">
+                        <img src="" alt="Image Not Supoorted" />
+                        <div class="img-title"><span> </span></div>
+                    </div>
+                </div>
+                <div class="product-item sports">
+                    <div class="product-item-inner">
+                        <img src="" alt="Image Not Supoorted" />
+                        <div class="img-title"><span> </span></div>
+                    </div>
+                </div>
+                <div class="product-item men">
+                    <div class="product-item-inner">
+                        <img src="" alt="Image Not Supoorted" />
+                        <div class="img-title"><span> </span></div>
+                    </div>
+                </div>
+                <div class="product-item sports">
+                    <div class="product-item-inner">
+                        <img src="" alt="Image Not Supoorted" />
+                        <div class="img-title"><span> </span></div>
+                    </div>
+                </div>
+                <div class="product-item men">
+                    <div class="product-item-inner">
+                        <img src="" alt="Image Not Supoorted" />
+                        <div class="img-title"><span> </span></div>
+                    </div>
+                </div>
+                <div class="product-item sports">
+                    <div class="product-item-inner">
+                        <img src="" alt="Image Not Supoorted" />
+                        <div class="img-title"><span> </span></div>
+                    </div>
+                </div>
+                <div class="product-item sports">
+                    <div class="product-item-inner">
+                        <img src="" alt="Image Not Supoorted" />
+                        <div class="img-title"><span> </span></div>
+                    </div>
+                </div>
+                <div class="product-item women">
+                    <div class="product-item-inner">
+                        <img src="" alt="Image Not Supoorted" />
+                        <div class="img-title"><span> </span></div>
+                    </div>
+                </div>
+                <div class="product-item men">
+                    <div class="product-item-inner">
+                        <img src="" alt="Image Not Supoorted" />
+                        <div class="img-title"><span> </span></div>
+                    </div>
+                </div>
+                <div class="product-item coupons">
+                    <div class="product-item-inner">
+                        <img src="" alt="Image Not Supoorted" />
+                        <div class="img-title"><span> </span></div>
+                    </div>
+                </div>
+                <div class="product-item equipments">
+                    <div class="product-item-inner">
+                        <img src="" alt="Image Not Supoorted" />
+                        <div class="img-title"><span</span></div>
+                    </div>
+                </div>
+                <div class="product-item coupons">
+                    <div class="product-item-inner">
+                        <img src="" alt="Image Not Supoorted" />
+                        <div class="img-title"><span> </span></div>
+                    </div>
+                </div>
+                <div class="product-item coupons">
+                    <div class="product-item-inner">
+                        <img src="" alt="Image Not Supoorted" />
+                        <div class="img-title"><span> </span></div>
+                    </div>
+                </div>
+                <div class="product-item accessories">
+                    <div class="product-item-inner">
+                        <img src="" alt="Image Not Supoorted" />
+                        <div class="img-title"><span> </span></div>
+                    </div>
+                </div>
+                <div class="product-item coupons">
+                    <div class="product-item-inner">
+                        <img src="" alt="Image Not Supoorted" />
+                        <div class="img-title"><span> </span></div>
+                    </div>
+                </div>
+                <div class="product-item sports">
+                    <div class="product-item-inner">
+                        <img src="" alt="Image Not Supoorted" />
+                        <div class="img-title"><span> </span></div>
+                    </div>
+                </div>
+                <div class="product-item accessories">
+                    <div class="product-item-inner">
+                        <img src="" alt="Image Not Supoorted" />
+                        <div class="img-title"><span> </span></div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer" id="footer">
+            <div class="grid--footer">
+                <div class="address-col">
+                    <address class="contacts grid--3--cols">
+                        <div>
+                            <figure class="location">
+                                <ion-icon class="contacts-icon" name="location-outline"></ion-icon>
+                                <figcaption>
+                                    <p>Sovereign Tower, CA 94107</p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <figure class="mobile">
+                            <ion-icon class="contacts-icon" name="call-outline"></ion-icon>
+                            <figcaption>
+                                <a class="footer-link" href="tel:415-201-6370">415-201-6370</a>
+                            </figcaption>
+                        </figure>
+                        <figure class="mail">
+                            <ion-icon class="contacts-icon" name="mail-outline"></ion-icon>
+                            <figcaption>
+                                <a class="footer-link" href="malito:help@fitklub.com"
+                                    >help@fitklub.com</a
+                                >
+                            </figcaption>
+                        </figure>
+                    </address>
+                </div>
+                <div class="follow grid--5--cols">
+                    <a href="#">
+                        <ion-icon class="follow-icon" name="logo-facebook"></ion-icon>
+                    </a>
+                    <a href="#">
+                        <ion-icon class="follow-icon" name="logo-instagram"></ion-icon>
+                    </a>
+                    <a href="#">
+                        <ion-icon class="follow-icon" name="logo-linkedin"></ion-icon>
+                    </a>
+                    <a href="#">
+                        <ion-icon class="follow-icon" name="logo-twitter"></ion-icon>
+                    </a>
+                    <a href="#">
+                        <ion-icon class="follow-icon" name="logo-youtube"></ion-icon>
+                    </a>
+                </div>
+                <a class="" href="#">
+                    <img src="images/logo (1).png" alt="D'fitKlub Logo" class="footer-logo logo" />
+                </a>
+                <div class="copy">
+                    <p class="follow-us-text">follow us</p>
+                    <br />
+                    <br />
+                    <p class="copyright">
+                        Copyright © <span class="year">2023</span> by D-fitKlub.Inc. All rights are
+                        reserved.
+                    </p>
+                </div>
+            </div>
+            <div class="credit">Created with <span>&hearts;</span> by &dash; KD</div>
+        </footer>
+    </body>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script
+        type="module"
+        src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+
+    <script
+        defer
+        src="// https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
+    ></script>
+
+    <script src="javascript/modalView.js"></script>
+    <script src="javascript/storeFilter.js"></script>
 </html>

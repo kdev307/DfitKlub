@@ -32,7 +32,7 @@
     cursor: pointer;
 }
 
-.btn,
+/* .btn,
 .btn:hover,
 .btn:active {
     margin-left: 250px;
@@ -47,20 +47,7 @@
     border-radius: 10px;
     border-color: gold;
     border: 2px solid white;
-}
-
-.btn:link,
-.btn:visited {
-    background-color: #000000;
-    outline: none;
-    border-radius: 2px;
-    text-decoration: none;
-    color: #f1f1f1;
-    border: 1px solid #f1f1f1;
-    -webkit-transition: 1s;
-    -moz-transition: 1s;
-    transition: 1s;
-}
+} */
 
 .label {
     padding: 10px;
