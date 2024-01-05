@@ -192,6 +192,7 @@
     border-radius: 0.75rem;
     width: 24rem;
     height: 20rem;
+    margin: 0.4rem;
 }
 
 .pelite {
@@ -238,7 +239,7 @@
 }
 
 .about-explore {
-    margin-left: 34.6rem;
+    margin-left: 29.8rem;
     padding: 1rem;
     text-align: center;
     /* border: 0.2rem solid yellow; */
@@ -283,7 +284,7 @@
 .programs {
     padding-top: 1.6rem;
     /* display: grid; */
-    gap: 6.4rem;
+    gap: 9.6rem;
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -299,7 +300,7 @@
 }
 
 .program-img:hover {
-    transform: scale(1.2);
+    transform: scale(1.125) translateY(-4rem);
     transition: 1s ease-in-out;
 }
 
@@ -328,7 +329,7 @@
     border-bottom-right-radius: 25%;
     border-top-right-radius: 5%;
     padding: 1.6rem;
-    margin-right: 1.6rem;
+    margin: 1.6rem;
     column-gap: 32rem;
 }
 
@@ -539,6 +540,7 @@
 .testimonial-name {
     font-size: 1.6rem;
     color: #bebebe;
+    padding-left: 12rem;
 }
 
 .gallery-img-1 {
@@ -621,9 +623,9 @@
   grid-row-end: ; */
 }
 
-.gallery-container {
+/* .gallery-container {
     padding: 2.4rem;
-}
+} */
 
 .gallery {
     display: grid;
