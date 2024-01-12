@@ -17,6 +17,10 @@ html {
     /* scroll-behavior: smooth; */
 }
 
+ul {
+    list-style-type: none;
+}
+
 .sub-heading {
     font-size: 3.2rem;
     padding-left: 100rem;
@@ -31,6 +35,7 @@ html {
 
 .carousel {
     display: flex;
+    /* background-size: cover; */
 }
 
 .carousel-inner img {

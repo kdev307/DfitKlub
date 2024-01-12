@@ -3,7 +3,6 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>be Fit be Discipline</title>
         <link rel="icon" href="images/logo (2).png" type="image/x-icon" />
         <link rel="apple-touch-icon" href="images/logo (2).png" />
         <link rel="manifest" href="manifest.webmanifest" />
@@ -13,7 +12,7 @@
         />
         <link rel="stylesheet" type="text/css" href="stylesheets/general.css" />
         <link rel="stylesheet" type="text/css" href="stylesheets/home.css" />
-        <link rel="stylesheet" type="text/css" href="stylesheets/modal-view.css" />
+        <link rel="stylesheet" type="text/css" href="stylesheets/media-queries.css" />
 
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -24,6 +23,9 @@
 
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <script src="javascript/script.js"></script>
+
+        <title>be Fit be Discipline</title>
     </head>
     <body>
         <header class="header">
@@ -59,50 +61,14 @@
                         </div>
                     </li>
                     <li>
-                        <a href="store.html" class="main-nav-link" target="_blank"
-                            ><ion-icon name="cart-outline"></ion-icon
-                        ></a>
+                        <div class="main-nav-link" target="_blank">
+                            <ion-icon name="cart-outline"></ion-icon>
+                        </div>
                     </li>
                 </ul>
             </nav>
         </header>
         <main>
-            <section class="section-overlay">
-                <div class="overlay-section" id="overlay-section">
-                    <div class="overlay-view">
-                        <div class="close-btn" onclick="hideOverlay()" id="overlay-hide">
-                            <ion-icon name="close-outline"></ion-icon>
-                        </div>
-                        <h1 class="heading-secondary">Sign In</h1>
-                        <form action="#" class="sign-in-form">
-                            <div>
-                                <label for="user-name">Username</label>
-                                <input
-                                    type="text"
-                                    placeholder="Enter your Username"
-                                    id="user-name"
-                                    required
-                                />
-                            </div>
-                            <div>
-                                <label for="password">Password</label>
-                                <input
-                                    type="password"
-                                    id="password"
-                                    placeholder="Enter your password"
-                                    required
-                                />
-                            </div>
-                            <button class="">Sign In</button>
-                        </form>
-                        <div class="other-sign-in">
-                            New User Registeration: <a href="signup.html">Click Here</a>
-                            <br />
-                            Admin Sign In: <a href="adminSignIn.html">Click Here</a>
-                        </div>
-                    </div>
-                </div>
-            </section>
             <section class="section-hero">
                 <div id="demo" class="carousel slide" data-ride="carousel">
                     <!-- Indicators -->
@@ -118,9 +84,7 @@
                             <p class="carousel-caption hero-message msg1">
                                 Join Us for promoting Healthy LifeStyle.
                             </p>
-                            <a class="carousel-caption hero-button btn1" href="signUp.html"
-                                >Join Now</a
-                            >
+                            <a class="carousel-caption hero-button btn1" href="#cta">Join Now</a>
                             <img src="images/home/hero.jpg" alt="hero1" />
                         </div>
                         <div class="carousel-item">

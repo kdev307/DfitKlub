@@ -28,6 +28,8 @@
 .profile-nav {
     list-style: none;
     font-size: 2.8rem;
+    text-transform: uppercase;
+    color: #d1cbcb;
 }
 
 .main-nav-link:link,
@@ -46,11 +48,12 @@
 .main-nav-user-list {
     list-style: none;
     display: inline-flex;
-    gap: 3.6rem;
+    gap: 3rem;
     padding: 0 1.2rem;
     align-items: center;
     justify-content: center;
-    font-family: "Edu NSW ACT Foundation", sans-serif;
+    font-size: 2rem;
+    font-family: "Rubik", sans-serif;
     font-weight: 500;
 }
 
@@ -166,6 +169,7 @@
     margin: 1.6rem;
     /* border: 2px solid white; */
     border-radius: 1rem;
+    transition: 1s ease-in-out;
 }
 
 .about-img:hover {
@@ -297,6 +301,7 @@
     height: 50rem;
     margin: -1.6rem;
     border-radius: 1rem;
+    transition: 1s ease-in-out;
 }
 
 .program-img:hover {
@@ -331,6 +336,8 @@
     padding: 1.6rem;
     margin: 1.6rem;
     column-gap: 32rem;
+    transition: 0.6s;
+    /* transform: rotate3d(0, 0, 0, 0deg) scale(0, 0); */
 }
 
 .program:hover {
@@ -368,6 +375,7 @@
     /* justify-self: end; */
     border: 2px solid #fdf2e9;
     padding: 4.6rem;
+    transition: 1s ease-in-out;
 }
 
 .pricing-plan--pro {
@@ -375,12 +383,14 @@
     padding: 4.6rem;
     position: relative;
     overflow: hidden;
+    transition: 1s ease-in-out;
 }
 
 .pricing-plan--home {
     /* justify-self: end; */
     border: 2px solid #fdf2e9;
     padding: 4.6rem;
+    transition: 1s ease-in-out;
 }
 
 .pricing-plan--pro:hover,
@@ -655,11 +665,12 @@
 .gallery-item img {
     display: block;
     width: 100%;
-    transition: all 0.4s;
+    transition: all 0.6s;
     border-radius: 1rem;
 }
 
 .gallery-item img:hover {
+    transition: all 0.6s;
     transform: scale(1.2);
 }
 
