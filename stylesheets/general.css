@@ -17,8 +17,11 @@ html {
     /* scroll-behavior: smooth; */
 }
 
-ul {
-    list-style-type: none;
+a,
+button {
+    all: unset;
+    padding: auto;
+    cursor: pointer;
 }
 
 .sub-heading {
@@ -113,7 +116,7 @@ ul {
     font-size: 2rem;
     font-weight: 600;
     padding: 1.6rem 3.2rem;
-    border-radius: 9px;
+    border-radius: 4rem;
 
     /* only necessary for .btn */
     border: none;
@@ -128,17 +131,21 @@ ul {
 
 .btn--full:link,
 .btn--full:visited {
-    background-color: #e33838;
+    transition: all 0.5s ease-in-out;
+    background-color: #c20000;
     color: #fff;
 }
 
 .btn--full:hover,
 .btn--full:active {
-    background-color: #a12424;
+    background-color: #f00;
+    color: #000;
+    box-shadow: inset 6px 6px 8px #454545, inset -6px -6px 8px #ffffffd4;
 }
 
 .btn--outline:link,
 .btn--outline:visited {
+    transition: all 0.5s ease-in-out;
     background-color: #fff;
     color: #555;
 }
@@ -148,7 +155,8 @@ ul {
     background-color: #fdf2e9;
     /* border: 3px solid #fff; */
     /* Trick to add border inside */
-    box-shadow: inset 0 0 0 3px #fff;
+    /* box-shadow: inset 0 0 0 3px #fff; */
+    box-shadow: inset 6px 6px 8px #454545, inset -6px -6px 8px #ffffffd4;
 }
 
 .btn--form {
@@ -156,9 +164,101 @@ ul {
     color: #cacaca;
     align-self: end;
     padding: 1.2rem;
+
+    transition: all 0.5s ease-in-out;
 }
 
 .btn--form:hover {
     background-color: #cacaca;
     color: #830000;
+    box-shadow: inset 6px 6px 8px #454545, inset -6px -6px 8px #ffffffd4;
+}
+
+/*************************************/
+/* FOOTER SECTION */
+/*************************************/
+
+.footer {
+    background-color: #000;
+    color: #fff;
+    padding: 1.6rem;
+    padding-top: 3.2rem;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.6rem;
+}
+
+.grid--footer {
+    display: grid;
+    grid-template-columns: 0.75fr;
+    justify-content: space-between;
+    /* column-gap: 9.6rem; */
+}
+
+address {
+    margin-bottom: 0rem;
+}
+
+.footer-link:link,
+.footer-link:visited {
+    text-decoration: none;
+    color: #bbbaba;
+}
+
+.footer-link:hover,
+.footer-link:active {
+    text-decoration: none;
+    color: #fff;
+}
+.footer-logo {
+    height: 14.4rem;
+    padding-left: 1.6rem;
+}
+
+.contacts-icon,
+.follow-icon {
+    height: 3.2rem;
+    width: 3.2rem;
+    padding: 0.8rem;
+    color: #ffffff;
+    border: 0.2rem solid #fff;
+    border-radius: 50%;
+}
+
+.contacts {
+    align-items: center;
+    /* justify-content: center; */
+    text-align: center;
+    justify-self: center;
+    column-gap: 2.4rem;
+}
+
+.follow {
+    align-items: center;
+    grid-column-start: 2;
+    grid-column-end: -1;
+    /* justify-content: center; */
+    column-gap: 4rem;
+    justify-self: center;
+}
+
+.follow-us-text {
+    padding-left: 18.6rem;
+    font-size: 2.4rem;
+    font-family: "Rubik", sans-serif;
+}
+
+.credit {
+    font-size: 2rem;
+    font-family: "Dancing Script";
+    text-align: center;
+    letter-spacing: 0.2rem;
+    padding: 0.8rem;
+}
+
+.credit span {
+    color: red;
+    font-size: 3rem;
 }
